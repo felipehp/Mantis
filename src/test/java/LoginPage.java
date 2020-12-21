@@ -32,9 +32,6 @@ public class LoginPage extends PageObject {
     public void enterIncorrectPassword() {this.password.sendKeys(INCORRECT_PASSWORD);}
     public void pressSubmitButton() {this.submit_button.click();}
 
-    /*final static String displayedText = driver.findElement(By.className("login-info-left")).getText();
-    final static String expectedText = "Logged in as:";*/
-
     /*Metodo para retorno da mensagem recebida de login com sucesso*/
     public String getMessageDisplayedSuccessLogin() {
         String displayedText = driver.findElement(By.className("login-info-left")).getText();
